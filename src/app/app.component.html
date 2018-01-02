@@ -71,9 +71,8 @@
             <button type="submit" class="btn btn-primary">Submit Form</button>
           </div>
         </div>
+        <div *ngIf="person">
+            <b>Your Name is:</b> {{person?.first_name}} {{person?.last_name}}
+        </div>
       </form>
     </div>
-
-  <div *ngIf="person">
-    <b>Your Name is:</b> {{person?.first_name}} {{person?.last_name}}
-  </div>
